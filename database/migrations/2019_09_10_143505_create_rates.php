@@ -19,7 +19,7 @@ class CreateRates extends Migration
             $table->string('english_name');
             $table->string('alphabetic_code');
             $table->string('digit_code');
-            $table->integer('rate')->nullable();
+            $table->decimal('rate')->nullable();
             $table->timestamps();
         });
     }

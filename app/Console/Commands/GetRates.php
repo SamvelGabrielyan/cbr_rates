@@ -24,6 +24,9 @@ class GetRates extends Command
 
     public function handle()
     {
+
+        Rate::truncate();
+
         $xml = new DOMDocument();
 //        $xmlx = new DOMDocument();
 //        $url_rate = 'http://www.cbr.ru/scripts/XML_daily.asp?date_req=' . date('d.m.Y');
